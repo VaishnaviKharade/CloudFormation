@@ -10,7 +10,7 @@ pipeline{
         stage('submit stack') {
             steps {
                 //bat "aws cloudformation create-stack --stack-name Vaishnavi --template-body file://ec2.yaml --region ap-south-1"
-                bat "aws iam --region ap-south-1"
+                bat "aws iam get-account-summary --region ap-south-1"
             }
         }
 
